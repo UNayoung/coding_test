@@ -4,7 +4,7 @@ def solution(n):
     start = n
     for i in range(n, 0, -3):
         for j in range(i):
-
+            print()
     return answer
 
 print(solution(6))
