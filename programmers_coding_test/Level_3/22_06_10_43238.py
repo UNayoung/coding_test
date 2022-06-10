@@ -5,5 +5,3 @@ def solution(n, times):
         temp2 = temp1.index(min(temp1))
         current[temp2] = temp1[temp2]
     return max(current)
-
-print(solution(6, [7, 10]))
