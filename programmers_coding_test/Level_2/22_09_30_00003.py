@@ -20,7 +20,7 @@ def ice_power(graph, v, rang, n):
     # for i in range(rang):
     #     for k in range(v[1]-)
 
-def solution(n: int, m: int, fires: List[List[int]], ices: List[List[int]]) -> List[List[int]]:
+def solution(n, m, fires, ices):
     graph = [[0] * n for _ in range(n)]
     for i in range(1, m+1):
         for k in fires:

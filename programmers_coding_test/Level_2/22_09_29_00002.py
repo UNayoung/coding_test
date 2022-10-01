@@ -11,7 +11,7 @@ def make(cur, remain, k):
         make(cur + remain[:i], remain[i:], k)
         make(cur + ".", remain[i:], k)
 
-def solution(k: int, dic: List[str], chat: str) -> str:
+def solution(k, dic, chat):
     chat_word = chat.split()
     for i in dic:
         make("", i, k)
@@ -21,4 +21,4 @@ def solution(k: int, dic: List[str], chat: str) -> str:
             chat_word[i] = "#" * (len(chat_word[i]))
     return " ".join(chat_word)
 
-print(solution(2, ["slang", "badword"], "badword ab.cd bad.ord .word sl.. bad.word"))
+print(solution(2, ["a", "b"], "a b c d"))

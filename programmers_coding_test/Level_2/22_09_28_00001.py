@@ -17,7 +17,7 @@ def binSearch(target):
             left = mid + 1
     return answer
 
-def solution(queries: List[List[int]]) -> int:
+def solution(queries) -> int:
     answer = 0
     graph = defaultdict(list)
     for i in queries:
