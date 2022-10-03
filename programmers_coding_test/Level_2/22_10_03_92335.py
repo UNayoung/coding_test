@@ -19,8 +19,10 @@ def solution(n, k):
     convert = nTok(n, k)
     arr = convert.split("0")
     for i in arr:
+        if i == '':
+            continue
         if isPrime(int(i)):
             answer += 1
     return answer
 
-print(solution(437674, 3))
+print(solution(110011, 10))
